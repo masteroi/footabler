@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive SPA - API example by Roi Sadika</title>
+</head>
+
+<body>
+    <h1 id="compt">League Caption</h1>
+
+    <!-- selector div --> 
+    <div class="selector" style="overflow-x:auto;">
+        <select id="league-selector" onchange="leagueSelect()">
+            <option value="456">Serie A - Italian</option>
+            <option value="455">Primera Division - Spanish</option>
+            <option value="450">Ligue 1 - French</option>
+            <option value="451">Ligue 2 - French</option>
+            <option value="452">1. Bundesliga - Germany</option>
+            <option value="453">2. Bundesliga - Germany</option>
+            <option value="445">Premier League - English</option>
+            <option value="446">Championship - English</option>
+            <option value="447">League One - English 3th League</option>
+            <option value="448">League Two - English 4th League</option>
+            <option value="449">Eredivisie - Netherlands</option>
+            <option value="444">Série A - Brasil</option>
+            
+        </select>
+    </div>
+
+    <!-- table div -->
+    <div class="table-area">
+        <table id="standing">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Team</th>
+                    <th>Played Games</th>
+                    <th>Wins</th>
+                    <th>Draws</th>
+                    <th>Losses</th>
+                    <th>+/-</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- this area is for the parsed table's body -->
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <hr>
+    <div class="footer">
+        <h4>Created by Roi Sadika </h4>
+    </div>
+    <!-- Script -->
+    <script src="widget.js"></script>
+</body>
+</html>

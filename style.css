@@ -1,0 +1,38 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+table img {
+    height: 20px;
+    width: 20px;
+}
+
+.table-area {
+    overflow-x: auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+td:first-child {
+    min-width: 30px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#compt , .selector , .footer {
+    text-align: center;
+}
+
+
+div {
+    padding: 3px;
+}
