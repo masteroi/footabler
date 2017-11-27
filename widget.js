@@ -13,14 +13,13 @@ function getData(league){
         type: 'GET',
     }).done(function (response) {
             footbalHtmlTableCreator(response);
-        }).fail(function () {
-            console.error('Error...');
+        }).fail(function (error) {
+            console.error('There was a problem..', error.responseText);
         });   
 }
 
 
 function footbalHtmlTableCreator(response) {
-
     var sortedRawTeamList = response.standing.sort(rankCompare);
     var htmlString = '';
 
@@ -67,7 +66,6 @@ function leagueSelect() {
     });
     footbalTableBody.fadeIn(3000);
 }
-
 
 
 getData(456);
