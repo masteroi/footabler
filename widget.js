@@ -12,7 +12,7 @@ function getData(league){
         dataType: 'json',
         type: 'GET',
     }).done(function (response) {
-        footbalHtmlTableCreator(response);
+            footbalHtmlTableCreator(response);
         }).fail(function () {
             console.error('Error...');
         });   
