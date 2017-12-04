@@ -7,7 +7,7 @@ var leagueTitle = $('#compt');
 
 function getData(league){
     $.ajax({
-        headers: { 'X-Auth-Token': 'put_here_the_api_token' }, 
+        headers: { 'X-Auth-Token': 'PUT-TOKEN-HERE' }, 
         url: `http://api.football-data.org/v1/competitions/${league}/leagueTable`, 
         dataType: 'json',
         type: 'GET',
@@ -37,6 +37,7 @@ function footbalHtmlTableCreator(response) {
                     </tr>
             `;
     });
+
     leagueTitle.text(response.leagueCaption); 
     footbalTableBody.html(htmlString); 
 }
@@ -67,5 +68,5 @@ function leagueSelect() {
     footbalTableBody.fadeIn(3000);
 }
 
-
+// Just an initial run
 getData(456);
